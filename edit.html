@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <style type="text/css">
+    .navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+    position: relative;
+}
+  </style>
+</head>
+<body onload="getTaskInfo()">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Project 1</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="add.html">Add</a></li>
+            <li><a href="edit.html">Edit</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+        
+    <div class="container">
+    	<form id="edit-student">
+			<div class="form-group">
+				<label for="task">First Name</label>
+				<input type="text" class="form-control" id="firstName" placeholder="firstName" />
+			</div>    	
+    	
+    		<div class="form-group">
+				<label for="task">Last Name</label>
+				<input type="text" class="form-control" id="lastName" placeholder="lastName" />
+			</div>    	
+			
+			<div class="form-group">
+				<label for="task">Telephone</label>
+				<input type="text" class="form-control" id="telephone" placeholder="telephone" />
+			</div>    	
+			<div class="form-group">
+				<label for="task">Street</label>
+				<input type="text" class="form-control" id="street" placeholder="street" />
+			</div>    	
+			
+			
+	     	<button type="submit" class="btn btn-default" >Submit</button>
+
+    	</form>
+    </div>
+ 
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
+    
+</body>
+</html>
